@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+  <div align="center">
+    <h1>Live HTML Interpreter</h1>
+  	<div class="container">
+  		<div class="caixa3"><h3>Code Editor</h3>
+        <textarea class="input" type="text/html" placeholder="Type in HTML here"
+			autofocus="on" onkeyup="Interpreter()"></textarea></div>
+  		<div class="caixa4"><h3>Code Preview</h3>
+      <div class="output"></div>
+    </div>
+  	</div>
+</div>
+<script type="text/javascript">
+  function Interpreter() {
+			document.querySelector(".output").innerHTML=(document.querySelector(".input").value);
+		};
+    </script>
+  </body>
+</html>
